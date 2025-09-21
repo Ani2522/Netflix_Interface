@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Martel Sans", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+.main {
+    background-image: url("assets/images/background.jpg");
+    height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 20px;
+    padding: 0 30px;
+
+}
+
+.hero> :nth-child(1){ /* > is used to get the immediate chlid as the hero also contain div and inside div 1st child is ipuut so this css is adding there as well hence user >(immediate first child) */
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-weight: 550;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.seperation{
+    height: 7px;
+    background-color: rgb(42, 42, 42);
+}
+
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+}
+
+.btn{
+    padding: 3px 30px;
+    font-weight: 400;
+    background-color: rgba(248, 243, 243, 0.021);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-red{
+    background-color: rgb(212, 0, 0);
+    color: white;
+    padding: 0px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 700;
+    border: 1px solid rgb(212, 0, 0);
+}
+
+.btn-red-sm{
+    background-color: rgb(212, 0, 0);
+    color: white;
+    padding: 3px 20px;
+    border: 1px solid rgb(212, 0, 0);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.main input{
+    font-size: 12px;
+    color: white;
+    padding: 7px 150px 8px 14px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.2);
+    font-weight: 500;
+    border: 1px solid rgba(246, 238, 238, 0.3);
+}
+
+.first{
+    display: flex;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+    
+
+.secImg{
+    position: relative;
+}
+
+.secImg img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.secImg video{
+    position: absolute;
+    top: 121px;
+    right: 78px;
+    width: 404px;
+}
+
+section.first> div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+.first> div :first-child{
+font-size: 48px;
+font-weight: 600;
+}
+
+.first> div :nth-child(2){
+font-size: 24px;
+font-weight: 600;
+}
+
+.faq{
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq h2{
+    text-align: center;
+    font-size: 24px;
+}
+
+.faq svg{
+    filter: invert(1);
+}
+
+.faqBox{
+    display: flex;
+    background-color: rgb(44, 44, 44);
+    padding: 24px;
+    max-width: 60vw;
+    margin: 10px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.faqBox:hover{
+    background-color: rgb(67, 67, 67);
+}
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        top: 84px;
+        right: 44px;
+        width: 222px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+    }    
+}
+
+.footer a{
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.question{
+    padding: 34px 0px;
+
+}
+
+
